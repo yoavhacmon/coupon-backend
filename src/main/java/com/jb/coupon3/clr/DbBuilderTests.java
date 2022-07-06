@@ -23,7 +23,7 @@ import java.util.List;
  * 05.2022
  */
 
-@Component
+//@Component
 @RequiredArgsConstructor
 @Order(1)
 /**

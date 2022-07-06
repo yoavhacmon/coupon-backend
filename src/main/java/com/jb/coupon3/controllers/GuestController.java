@@ -18,7 +18,7 @@ public class GuestController {
     private final GuestService guestService;
 
 
-    @GetMapping
+    @GetMapping("/")
     public ResponseEntity<?> allCoupons() throws CustomExceptions {
         return ResponseEntity.ok()
                 .body(guestService.getAllCoupons());
@@ -46,7 +46,6 @@ public class GuestController {
      */
     @PostMapping("/addCustomer")
     public ResponseEntity<?> addCustomer (@RequestBody Customer customer) throws CustomExceptions {
-
        guestService.addCustomer(customer);
         return ResponseEntity.ok()
                 .body(customer);
